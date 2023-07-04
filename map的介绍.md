@@ -29,3 +29,5 @@ put的时间复杂度是: O(1)
 当HashMap的HashCode相同时会发生碰撞，此时会把相同的数据链接成一个链表
 
 当链表长度大于8时map会退化成链表，此时map会用红黑树来减少时间复杂度。
+
+![R-C](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/49d26361-45be-4b1a-b4c5-8cf1e7a0ba50)
