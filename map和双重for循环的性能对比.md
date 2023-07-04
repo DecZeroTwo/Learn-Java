@@ -77,7 +77,10 @@ public static void test3() {
         System.out.println(endTime - startTime);
     }
 ```
-
 ![test3](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/250bd550-dd45-4e94-a33e-e2635d2ef125)
+
+test3()循环了两万次,test2()循环了一万次
+
+test2()运行时间小于test3()
 
 我们可以总结出将长度更长的那个List换成Map性能会更好,如果将长度短的List换成Map则for循环的遍历次数更多时间也会更长
