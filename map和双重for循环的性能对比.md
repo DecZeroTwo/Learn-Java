@@ -1,5 +1,8 @@
 map优化
 双重for循环
+
+![test1](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/2ea91a25-43e1-4dc9-9383-d635c9aaa393)
+
 ```
 public static void test1() {
         List<Integer> list1 = new ArrayList<>();
@@ -25,6 +28,9 @@ public static void test1() {
 ```
 
 map实现1
+
+![test2](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/5bb42263-8cdc-4747-92f5-5591858a7517)
+
 ```
 public static void test2() {
         List<Integer> list = new ArrayList<>();
@@ -48,6 +54,9 @@ public static void test2() {
 ```
 
 map实现2
+
+![test3](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/250bd550-dd45-4e94-a33e-e2635d2ef125)
+
 ```
 public static void test3() {
         Map<Integer,Integer> map = new HashMap<>();
