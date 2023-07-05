@@ -81,4 +81,16 @@ function sum(n, f) {
 
 ![2](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/d307287c-ee65-4f1d-a9ea-a94cf82bfeda)
 
+1.
+
+```agsl
+function sumOfAnything(n, f) {
+    let sum = 0;
+    for (let i = 1; i <= n; i++) {
+        sum += f(i);
+    }
+    return sum;
+}
+```
+
 ![3](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/aded5af0-7de9-49f2-a8e7-beb7349edc73)
