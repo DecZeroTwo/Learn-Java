@@ -159,5 +159,6 @@ interface Op2{
 }
 ```
 
+![java](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/4a93c41b-459f-4eb1-94eb-543d137d51ad)
 
 相当于重写了接口的方法，比如传进去一个x返回的是x的立方
