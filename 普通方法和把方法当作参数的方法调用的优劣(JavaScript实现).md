@@ -51,6 +51,8 @@ function sum(n) {
 ```
 
 可以使用lambda表达式来表示
+1.
+
 ```agsl
 function sumOfAnything(n, f) {
         let sum = 0;
@@ -60,5 +62,21 @@ function sumOfAnything(n, f) {
         return sum;
     }
 ```
-图片
 
+![1](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/c9e0efe7-120c-4fa5-874e-9932bc8628ff)
+
+2.
+
+```agsl
+function sum(n) {
+    let sum = 1;
+    for (let i = 1; i <= n; i++) {
+        sum = sum * i;
+    }
+    return sum;
+}
+```
+
+![2](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/d307287c-ee65-4f1d-a9ea-a94cf82bfeda)
+
+![3](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/aded5af0-7de9-49f2-a8e7-beb7349edc73)
