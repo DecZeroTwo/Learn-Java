@@ -109,3 +109,4 @@ function sum(n,f,comb){
 
 ![4](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/f9b35c88-47a0-4674-a0fc-ab7bfabddede)
 
+在java中我们也可以通过接口来实现
