@@ -100,7 +100,7 @@ function sum(n, f) {
 
 ![3](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/aded5af0-7de9-49f2-a8e7-beb7349edc73)
 
-还可以在函数中套函数更灵活的实现多种运算
+还可以在函数中套函数，更灵活的实现多种运算
 
 ```js
 function sum(n,f,comb){
