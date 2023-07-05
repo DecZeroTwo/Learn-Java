@@ -51,7 +51,7 @@ function sum(n) {
 }
 ```
 
-可以使用lambda表达式来表示
+可以使用lambda表达式来实现
 
 1.
 
