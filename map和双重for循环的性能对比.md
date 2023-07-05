@@ -25,7 +25,8 @@ public static void test1() {
     }
 ```
 
-![test1](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/2ea91a25-43e1-4dc9-9383-d635c9aaa393)
+![1a0h6gld](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/47a9eabe-5c7d-476d-b65a-7896cb3321c5)
+
 
 map实现1
 
