@@ -94,3 +94,18 @@ function sum(n, f) {
 ```
 
 ![3](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/aded5af0-7de9-49f2-a8e7-beb7349edc73)
+
+还可以在函数中套函数更灵活的实现多种运算
+
+```agsl
+function sum(n, f) {
+    let sum = 0;
+    for (let i = 1; i <= n ; i++) {
+      sum = comb(sum,f(i));
+    }
+    return sum;
+}
+```
+
+![4](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/f9b35c88-47a0-4674-a0fc-ab7bfabddede)
+
