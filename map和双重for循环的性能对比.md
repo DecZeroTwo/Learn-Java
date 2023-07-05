@@ -27,7 +27,6 @@ public static void test1() {
 
 ![1a0h6gld](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/47a9eabe-5c7d-476d-b65a-7896cb3321c5)
 
-
 map实现1
 
 ```
@@ -52,7 +51,7 @@ public static void test2() {
     }
 ```
 
-![test2](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/5bb42263-8cdc-4747-92f5-5591858a7517)
+![5as3gokq](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/66d2f5d2-a348-4740-9d4a-2289e4c4ccd1)
 
 map实现2
 
@@ -78,7 +77,8 @@ public static void test3() {
         System.out.println(endTime - startTime);
     }
 ```
-![test3](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/250bd550-dd45-4e94-a33e-e2635d2ef125)
+
+![rg5ual8j](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/340c071c-e301-40c7-9101-c9314332a02e)
 
 test3()循环了两万次,test2()循环了一万次
 
