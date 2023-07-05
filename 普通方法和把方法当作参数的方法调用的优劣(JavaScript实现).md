@@ -17,7 +17,7 @@
 
 1.求自然数n的和
 ```agsl
-function sumOfAnything(n) {
+function sum(n) {
     let sum = 0;
     for (let i = 1; i <= n; i++) {
         sum += i;
@@ -29,7 +29,7 @@ function sumOfAnything(n) {
 2.求n的阶层
 
 ```agsl
-function sumOfAnything(n) {
+function sum(n) {
     let sum = 1;
     for (let i = 1; i <= n; i++) {
         sum = sum * i;
@@ -41,7 +41,7 @@ function sumOfAnything(n) {
 3.求自然数的平方和
 
 ```agsl
-function sumOfAnything(n) {
+function sum(n) {
     let sum = 0;
     for (let i = 1; i <= n; i++) {
         sum += i*i;
