@@ -19,7 +19,7 @@
 
 ## 下面介绍三种在JavaScript中用lambda表达式来把函数作为参数进行传递的方法
 
-1.求自然数n的和
+### 1.求自然数n的和
 
 ```js
 function sum(n) {
@@ -31,7 +31,7 @@ function sum(n) {
 }
 ```
 
-2.求n的阶层
+### 2.求n的阶层
 
 ```js
 function sum(n) {
@@ -43,7 +43,7 @@ function sum(n) {
 }
 ```
 
-3.求自然数的平方和
+### 3.求自然数的平方和
 
 ```js
 function sum(n) {
@@ -55,9 +55,9 @@ function sum(n) {
 }
 ```
 
-可以使用lambda表达式来实现
+### 可以使用lambda表达式来实现
 
-1.
+### 1.
 
 ```js
 function sum(n, f) {
@@ -71,7 +71,7 @@ function sum(n, f) {
 
 ![1](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/c9e0efe7-120c-4fa5-874e-9932bc8628ff)
 
-2.
+### 2.
 
 ```js
 function sum(n, f) {
@@ -85,7 +85,7 @@ function sum(n, f) {
 
 ![2](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/d307287c-ee65-4f1d-a9ea-a94cf82bfeda)
 
-3.
+### 3.
 
 ```js
 function sum(n, f) {
@@ -99,7 +99,7 @@ function sum(n, f) {
 
 ![3](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/aded5af0-7de9-49f2-a8e7-beb7349edc73)
 
-还可以在函数中套函数，更灵活的实现多种运算
+### 还可以在函数中套函数，更灵活的实现多种运算
 
 ```js
 function sum(n,f,comb){
@@ -113,7 +113,7 @@ function sum(n,f,comb){
 
 ![4](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/f9b35c88-47a0-4674-a0fc-ab7bfabddede)
 
-在java中我们也可以通过接口来实现
+### 在java中我们也可以通过接口来实现
 
 ```java
 public class Lambda {
