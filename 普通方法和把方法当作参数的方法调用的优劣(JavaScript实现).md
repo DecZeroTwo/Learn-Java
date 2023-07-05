@@ -56,7 +56,7 @@ function sum(n) {
 1.
 
 ```agsl
-function sumOfAnything(n, f) {
+function sum(n, f) {
     let sum = 0;
     for (let i = 1; i <= n; i++) {
         sum += f(i);
@@ -84,7 +84,7 @@ function sum(n, f) {
 3.
 
 ```agsl
-function sumOfAnything(n, f) {
+function sum(n, f) {
     let sum = 0;
     for (let i = 1; i <= n; i++) {
         sum += f(i);
