@@ -16,6 +16,7 @@
 下面介绍一种在JavaScript中用lambda表达式来把函数作为参数进行传递的方法
 
 1.求自然数n的和
+
 ```agsl
 function sum(n) {
     let sum = 0;
@@ -51,6 +52,7 @@ function sum(n) {
 ```
 
 可以使用lambda表达式来表示
+
 1.
 
 ```agsl
