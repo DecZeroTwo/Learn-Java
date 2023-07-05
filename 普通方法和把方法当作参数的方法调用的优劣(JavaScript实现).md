@@ -57,12 +57,12 @@ function sum(n) {
 
 ```agsl
 function sumOfAnything(n, f) {
-        let sum = 0;
-        for (let i = 1; i <= n; i++) {
-            sum += f(i);
-        }
-        return sum;
+    let sum = 0;
+    for (let i = 1; i <= n; i++) {
+        sum += f(i);
     }
+    return sum;
+}
 ```
 
 ![1](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/c9e0efe7-120c-4fa5-874e-9932bc8628ff)
@@ -70,10 +70,10 @@ function sumOfAnything(n, f) {
 2.
 
 ```agsl
-function sum(n) {
+function sum(n, f) {
     let sum = 1;
     for (let i = 1; i <= n; i++) {
-        sum = sum * i;
+      sum = f(sum, i);
     }
     return sum;
 }
