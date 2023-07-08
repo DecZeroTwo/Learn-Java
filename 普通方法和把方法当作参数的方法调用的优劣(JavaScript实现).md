@@ -69,7 +69,7 @@ function sum(n, f) {
 }
 ```
 
-![1](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/c9e0efe7-120c-4fa5-874e-9932bc8628ff)
+![1](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/64c1798c-d9f6-4cc0-baf1-225f4bd25d91)
 
 ### 2.
 
@@ -83,7 +83,7 @@ function sum(n, f) {
 }
 ```
 
-![2](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/d307287c-ee65-4f1d-a9ea-a94cf82bfeda)
+![2](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/6658687c-699d-404b-9e05-8390a94f30ff)
 
 ### 3.
 
@@ -97,7 +97,7 @@ function sum(n, f) {
 }
 ```
 
-![3](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/aded5af0-7de9-49f2-a8e7-beb7349edc73)
+![3](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/30d9c7dd-c45b-4e9e-bac0-7c1f726e155c)
 
 ### 还可以在函数中套函数，更灵活的实现多种运算
 
@@ -110,8 +110,7 @@ function sum(n,f,comb){
     return sum;
   }
 ```
-
-![4](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/f9b35c88-47a0-4674-a0fc-ab7bfabddede)
+![4](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/e4cffa73-9f8e-4a74-bf2d-7f466a4211b1)
 
 ### 在Java中我们也可以通过接口来实现
 
