@@ -49,4 +49,4 @@ put的时间复杂度是: O(1)
 
 当链表长度大于8时map会退化成链表，此时map会用红黑树来减少时间复杂度。
 
-([https://github.com/DecZeroTwo/Learn-Java/assets/138491961/49d26361-45be-4b1a-b4c5-8cf1e7a0ba50](https://raw.githubusercontent.com/DecZeroTwo/learn_java/main/images/250949060-49d26361-45be-4b1a-b4c5-8cf1e7a0ba50.png)
+[([https://github.com/DecZeroTwo/Learn-Java/assets/138491961/49d26361-45be-4b1a-b4c5-8cf1e7a0ba50](https://raw.githubusercontent.com/DecZeroTwo/learn_java/main/images/250949060-49d26361-45be-4b1a-b4c5-8cf1e7a0ba50.png)](https://raw.githubusercontent.com/DecZeroTwo/learn_java/main/images/250949060-49d26361-45be-4b1a-b4c5-8cf1e7a0ba50.png)https://raw.githubusercontent.com/DecZeroTwo/learn_java/main/images/250949060-49d26361-45be-4b1a-b4c5-8cf1e7a0ba50.png
