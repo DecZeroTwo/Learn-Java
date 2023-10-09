@@ -2,7 +2,7 @@
 
 ### 双重for循环
 
-```
+```java
 public static void test1() {
         List<Integer> list1 = new ArrayList<>();
         List<Integer> list2 = new ArrayList<>();
@@ -34,7 +34,7 @@ public static void test1() {
 
 ### map实现1
 
-```
+```java
 public static void test2() {
         List<Integer> list = new ArrayList<>();
         Map<Integer,Integer> map = new HashMap<>();
@@ -64,7 +64,7 @@ public static void test2() {
 
 ### map实现2
 
-```
+```java
 public static void test3() {
         Map<Integer,Integer> map = new HashMap<>();
         List<Integer> list = new ArrayList<>();
