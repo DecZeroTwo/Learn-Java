@@ -1,5 +1,7 @@
+# 普通方法和把方法当作参数的方法调用的优劣
+
 当我们编写代码时，方法调用（函数调用）是我们经常使用的一种基本技术。它允许我们将一段逻辑封装为可重用的代码块，并在需要的时候进行调用。然而，就像任何编程技术一样，方法调用也有一些缺点和考虑事项。
-====
+----
 
 
 ## 在本文中，我们将探讨一般方法调用的一些缺点，这些缺点可能会对代码的性能、可读性和维护性产生影响。了解这些缺点将帮助我们更好地理解何时使用方法调用，并在适当的时候考虑使用其他技术。
@@ -69,7 +71,11 @@ function sum(n, f) {
 }
 ```
 
-![1](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/64c1798c-d9f6-4cc0-baf1-225f4bd25d91)
+
+
+![251913092-64c1798c-d9f6-4cc0-baf1-225f4bd25d91](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310091710120.png)
+
+
 
 ### 2.
 
@@ -83,7 +89,11 @@ function sum(n, f) {
 }
 ```
 
-![2](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/6658687c-699d-404b-9e05-8390a94f30ff)
+
+
+![251913156-6658687c-699d-404b-9e05-8390a94f30ff](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310091711627.png)
+
+
 
 ### 3.
 
@@ -97,7 +107,11 @@ function sum(n, f) {
 }
 ```
 
-![3](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/30d9c7dd-c45b-4e9e-bac0-7c1f726e155c)
+
+
+![251913197-30d9c7dd-c45b-4e9e-bac0-7c1f726e155c](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310091711934.png)
+
+
 
 ### 还可以在函数中套函数，更灵活的实现多种运算
 
@@ -110,7 +124,11 @@ function sum(n,f,comb){
     return sum;
   }
 ```
-![4](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/e4cffa73-9f8e-4a74-bf2d-7f466a4211b1)
+
+
+![251913223-e4cffa73-9f8e-4a74-bf2d-7f466a4211b1](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310091712761.png)
+
+
 
 ### 在Java中我们也可以通过接口来实现
 
@@ -157,7 +175,11 @@ interface Op2{
 }
 ```
 
-![java](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/4a93c41b-459f-4eb1-94eb-543d137d51ad)
+
+
+![251209719-4a93c41b-459f-4eb1-94eb-543d137d51ad](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310091712292.png)
+
+
 
 相当于重写了接口的方法，比如传进去一个x返回的是x的立方
 
