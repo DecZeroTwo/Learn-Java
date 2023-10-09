@@ -1,5 +1,6 @@
-map优化
-双重for循环
+# map优化
+
+### 双重for循环
 
 ```
 public static void test1() {
@@ -25,9 +26,13 @@ public static void test1() {
     }
 ```
 
-![1a0h6gld](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/47a9eabe-5c7d-476d-b65a-7896cb3321c5)
 
-map实现1
+
+![251014401-47a9eabe-5c7d-476d-b65a-7896cb3321c5](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310091653251.png)
+
+
+
+### map实现1
 
 ```
 public static void test2() {
@@ -51,9 +56,13 @@ public static void test2() {
     }
 ```
 
-![5as3gokq](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/66d2f5d2-a348-4740-9d4a-2289e4c4ccd1)
 
-map实现2
+
+![251014596-66d2f5d2-a348-4740-9d4a-2289e4c4ccd1](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310091654070.png)
+
+
+
+### map实现2
 
 ```
 public static void test3() {
@@ -78,7 +87,13 @@ public static void test3() {
     }
 ```
 
-![rg5ual8j](https://github.com/DecZeroTwo/Learn-Java/assets/138491961/340c071c-e301-40c7-9101-c9314332a02e)
+
+
+![251014629-340c071c-e301-40c7-9101-c9314332a02e](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310091654635.png)
+
+
+
+### 总结
 
 test3()循环了两万次,test2()循环了一万次
 
