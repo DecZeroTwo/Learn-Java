@@ -4,7 +4,9 @@
 
 
 
-![image-20231008195744365](https://raw.githubusercontent.com/DecZeroTwo/learn_java/main/images/image-20231008194928202.png)
+![80783a3e7f354c738886d9ccd700d44f](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310091628682.png)
+
+
 
 ##### 镜像查询
 
@@ -14,7 +16,7 @@ docker search mysql #(你要的软件)
 
 
 
-![image-20231008194928202](https://raw.githubusercontent.com/DecZeroTwo/learn_java/main/images/image-20231008194928202.png)
+![image-20231008194928202](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310091626992.png)
 
 ##### 拉取镜像
 
@@ -24,7 +26,9 @@ dokcer pull mariadb #（搜索到的名称）
 
 
 
-![image-20231008195330139](https://raw.githubusercontent.com/DecZeroTwo/learn_java/main/images/image-20231008195330139.png)
+![image-20231008195330139](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310091630108.png)
+
+
 
 ##### 查询已下载镜像
 
@@ -34,7 +38,9 @@ docker image ls
 
 
 
-![image-20231008195435301](https://raw.githubusercontent.com/DecZeroTwo/learn_java/main/images/image-20231008195435301.png)
+![image-20231008195435301](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310091631015.png)
+
+
 
 ##### 删除镜像
 
@@ -48,7 +54,9 @@ docker image rm 镜像id
 
 
 
-![image-20231008195927366](https://raw.githubusercontent.com/DecZeroTwo/learn_java/main/images/image-20231008195927366.png)
+![image-20231008195927366](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310091632408.png)
+
+
 
 ```dockerfile
 docker rmi 镜像名
@@ -56,7 +64,7 @@ docker rmi 镜像名
 
 
 
-![image-20231008200331921](https://raw.githubusercontent.com/DecZeroTwo/learn_java/main/images/image-20231008200331921.png)
+![image-20231008200331921](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310091638890.png)
 
 
 
@@ -75,7 +83,9 @@ docker run -it \
 
 
 
-![image-20231008201102416](https://raw.githubusercontent.com/DecZeroTwo/learn_java/main/images/image-20231008201102416.png)
+![image-20231008201102416](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310091633033.png)
+
+
 
 ##### 查看容器
 
@@ -89,7 +99,9 @@ dokcer ps
 
 
 
-![image-20231008201619457](https://raw.githubusercontent.com/DecZeroTwo/learn_java/main/images/image-20231008201619457.png)
+![image-20231008201619457](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310091639377.png)
+
+
 
 ```dockerfile
 docker ps -a
@@ -97,7 +109,9 @@ docker ps -a
 
 
 
-![image-20231008201757852](https://raw.githubusercontent.com/DecZeroTwo/learn_java/main/images/image-20231008201757852.png)
+![image-20231008201757852](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310091640026.png)
+
+
 
 ##### 查看容器日志
 
@@ -109,7 +123,9 @@ docker logs mysqlx
 
 
 
-![image-20231008201904196](https://raw.githubusercontent.com/DecZeroTwo/learn_java/main/images/image-20231008201904196.png)
+![image-20231008201904196](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310091640005.png)
+
+
 
 ##### 关闭容器
 
@@ -121,7 +137,9 @@ docker stop mysqlx
 
 
 
-![image-20231008202335505](https://raw.githubusercontent.com/DecZeroTwo/learn_java/main/images/image-20231008202335505.png)
+![image-20231008202335505](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310091641089.png)
+
+
 
 ##### 启动容器
 
@@ -133,7 +151,9 @@ docker start mysqlx
 
 
 
-![image-20231008202523922](https://raw.githubusercontent.com/DecZeroTwo/learn_java/main/images/image-20231008202523922.png)
+![image-20231008202523922](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310091642273.png)
+
+
 
 ##### 重启容器
 
@@ -145,7 +165,9 @@ docker restart mysqlx
 
 
 
-![image-20231008202635188](https://raw.githubusercontent.com/DecZeroTwo/learn_java/main/images/image-20231008202635188.png)
+![image-20231008202635188](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310091645973.png)
+
+
 
 ##### 删除容器
 
@@ -157,7 +179,9 @@ docker rm mysqlx
 
 
 
-![image-20231008202843327](https://raw.githubusercontent.com/DecZeroTwo/learn_java/main/images/image-20231008202843327.png)
+![image-20231008202843327](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310091646337.png)
+
+
 
 ##### 进入容器
 
@@ -169,7 +193,9 @@ docker exec -it mysqlx bash
 
 
 
-![image-20231008203348594](https://raw.githubusercontent.com/DecZeroTwo/learn_java/main/images/image-20231008203348594.png)
+![image-20231008203348594](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310091647815.png)
+
+
 
 ##### 查看容器的元数据
 
@@ -181,7 +207,9 @@ docker inspect mysqlx
 
 
 
-![image-20231008203601279](https://raw.githubusercontent.com/DecZeroTwo/learn_java/main/images/image-20231008203601279.png)
+![image-20231008203601279](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310091647493.png)
+
+
 
 ##### 关键字查找
 
@@ -193,7 +221,9 @@ docker inspect mysqlx |grep IPA
 
 
 
-![image-20231008203959202](https://raw.githubusercontent.com/DecZeroTwo/learn_java/main/images/image-20231008203959202.png)
+![image-20231008203959202](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310091648539.png)
+
+
 
 ##### 输出重定向
 
@@ -205,7 +235,9 @@ docker inspect mysqlx >> /var/mysqlx.txt
 
 
 
-![image-20231008204436240](https://raw.githubusercontent.com/DecZeroTwo/learn_java/main/images/image-20231008204436240.png)
+![image-20231008204436240](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310091648994.png)
+
+
 
 ##### 创建容器时指定容器ip
 
@@ -224,7 +256,7 @@ docker run -it \
 
 
 
-![image-20231008204648527](https://raw.githubusercontent.com/DecZeroTwo/learn_java/main/images/image-20231008204648527.png)
+![](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310091648779.png)
 
 
 
@@ -236,6 +268,10 @@ docker run -it \
 -v /var/mysqlx:/var/lib/mysql \
 ```
 
-![image-20231008205215632](https://raw.githubusercontent.com/DecZeroTwo/learn_java/main/images/image-20231008205215632.png)
 
-![image-20231008205233224](https://raw.githubusercontent.com/DecZeroTwo/learn_java/main/images/image-20231008205233224.png)
+
+![image-20231008205215632](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310091649523.png)
+
+
+
+![image-20231008205233224](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310091649780.png)
