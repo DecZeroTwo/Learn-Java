@@ -224,6 +224,19 @@ public class TypeController {
         log.debug("上传文件名称:{}", originalFilename);
         return new HttpResp<>(200, "success", originalFilename + "上传成功", LocalDate.now());
     }
+
+    @ApiOperation(value = "qiang", notes = "抢购图书")
+    @PutMapping("/qiang")
+    public HttpResult<Integer> qiang() {
+        int retValue;
+        try {
+            retValue = ibs.qiangGou();
+            log.debug("retValue:{}", retValue);
+        } catch (Exception e) {
+            return new HttpResult<>(500, e.getMessage(), -1, LocalDate.now());
+        }
+        return new HttpResult<>(200, "抢购成功", retValue, LocalDate.now());
+    }
 }
 ```
 
