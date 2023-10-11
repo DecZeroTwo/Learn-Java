@@ -2,6 +2,8 @@
 
 ## Dockerfile
 
+![Docker Images | DockerFile | Kubernetes | Docker & Kubernetes](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310112046872.png)
+
 > docker一般使用Dockerfile文本文件来构建镜像，当然也可以直接从容器来构建镜像。
 >
 > Dockerfile由一条条构建镜像所需的指令和说明构成。
