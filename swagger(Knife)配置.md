@@ -69,11 +69,10 @@
 
 #### 2、用在请求的方法上(无参数)：
 
+>@ApiOperation："用在请求的方法上，说明方法的作用"
 >
-> @ApiOperation："用在请求的方法上，说明方法的作用"
->
-> value="说明方法的作用"
-> notes="方法的备注"
+>value="说明方法的作用"
+>notes="方法的备注"
 
 示例：
 
@@ -85,17 +84,17 @@
 
 > @ApiImplicitParams：用在请求的方法上，包含一组参数说明
 > @ApiImplicitParam：用在 @ApiImplicitParams 注解中，指定一个请求参数的信息    
->     name：参数名
->     value：参数的说明
->     required：参数是否必传
->     paramType：参数放在哪个地方
->       · header --> 请求参数的获取：@RequestHeader
->       · query --> 请求参数的获取：@RequestParam
->       · path（用于restful接口）--> 请求参数的获取：@PathVariable
->       · body（不常用）
->       · form（不常用）   
->     dataType：参数类型，默认String，其它值dataType="Integer"    
->     defaultValue：参数的默认值
+>  name：参数名
+>  value：参数的说明
+>  required：参数是否必传
+>  paramType：参数放在哪个地方
+>    · header --> 请求参数的获取：@RequestHeader
+>    · query --> 请求参数的获取：@RequestParam
+>    · path（用于restful接口）--> 请求参数的获取：@PathVariable
+>    · body（不常用）
+>    · form（不常用）   
+>  dataType：参数类型，默认String，其它值dataType="Integer"    
+>  defaultValue：参数的默认值
 
 示列：
 
@@ -379,3 +378,39 @@ public class Swagger3Config {
         return new HttpResp<>(200, "success", originalFilename + "上传成功", LocalDate.now());
     }
 ```
+
+
+
+#### 压力测试(JMeter)
+
+##### 添加线程组
+
+![image-20231011192129596](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310112057923.png)
+
+![image-20231011192321281](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310112058504.png)
+
+
+
+> 上述图表示 1s请求100次 执行1次
+
+##### 添加http请求
+
+![image-20231011192401510](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310112058624.png)
+
+![img](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310112058385.png)
+
+> http请求填写如图所示，内容编码可不填写
+
+##### 添加结果树
+
+![image-20231011192501443](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310112055670.png)
+
+##### 开始测试
+
+![image-20231011192758364](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310112055658.png)
+
+##### 查看结果
+
+![image-20231011192828707](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310112055824.png)
+
+![在这里插入图片描述](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310112102049.png)
