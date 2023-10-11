@@ -381,9 +381,9 @@ public class Swagger3Config {
 
 
 
-### 压力测试(JMeter)
+## 压力测试(JMeter)
 
-#### 添加线程组
+### 添加线程组
 
 ![image-20231011192129596](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310112057923.png)
 
@@ -393,7 +393,7 @@ public class Swagger3Config {
 
 > 上述图表示 1s请求100次 执行1次
 
-#### 添加http请求
+### 添加http请求
 
 ![image-20231011192401510](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310112058624.png)
 
@@ -401,15 +401,15 @@ public class Swagger3Config {
 
 > http请求填写如图所示，内容编码可不填写
 
-#### 添加结果树
+### 添加结果树
 
 ![image-20231011192501443](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310112055670.png)
 
-#### 开始测试
+### 开始测试
 
 ![image-20231011192758364](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310112055658.png)
 
-#### 查看结果
+### 查看结果
 
 ![image-20231011192828707](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310112055824.png)
 
