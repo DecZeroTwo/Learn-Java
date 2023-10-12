@@ -191,6 +191,9 @@ public class Type {
 @Slf4j
 public class TypeController {
 
+	@Autowired
+	private IBookService iBookService;
+
     @ApiOperation(value = "findAll", notes = "对所有图书类型查询")
     @GetMapping("/findAll")
     public HttpResp<List<Type>> findAll() {
@@ -225,17 +228,17 @@ public class TypeController {
         return new HttpResp<>(200, "success", originalFilename + "上传成功", LocalDate.now());
     }
 
-    @ApiOperation(value = "qiang", notes = "抢购图书")
+	@ApiOperation(value = "qiang", notes = "抢购图书")
     @PutMapping("/qiang")
-    public HttpResult<Integer> qiang() {
+    public HttpResp<Integer> qiang() {
         int retValue;
         try {
-            retValue = ibs.qiangGou();
-            log.debug("retValue:{}", retValue);
+            retValue = iBookService.qiangGou();
+            log.debug("剩余图书:{}", retValue);
         } catch (Exception e) {
-            return new HttpResult<>(500, e.getMessage(), -1, LocalDate.now());
+            return new HttpResp<>(500, e.getMessage(), -1, LocalDate.now());
         }
-        return new HttpResult<>(200, "抢购成功", retValue, LocalDate.now());
+        return new HttpResp<>(200, "抢购成功", retValue, LocalDate.now());
     }
 }
 ```
@@ -395,6 +398,43 @@ public class Swagger3Config {
 
 
 ## 压力测试(JMeter)
+
+
+
+### Controller方法
+
+```java
+@Autowired
+private IBookService iBookService;
+
+@ApiOperation(value = "qiang", notes = "抢购图书")
+@PutMapping("/qiang")
+public HttpResp<Integer> qiang() {
+	int retValue;
+	try {
+		retValue = iBookService.qiangGou();
+		log.debug("剩余图书:{}", retValue);
+		} catch (Exception e) {
+			return new HttpResp<>(500, e.getMessage(), -1, LocalDate.now());
+			}
+	return new HttpResp<>(200, "抢购成功", retValue, LocalDate.now());
+}
+```
+
+### Service方法
+
+```java
+@Service
+public class IBookServiceImpl implements IBookService {
+    int total=100;
+    @Override
+    public int qiangGou() {
+        if (total<0)throw new RuntimeException("对不起，书已售空");
+        total--;
+        return total;
+    }
+}
+```
 
 ### 添加线程组
 
