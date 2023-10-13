@@ -148,7 +148,20 @@ docker run \
 -d mysql
 ```
 
+#### 修改从服务器配置
 
+```
+server-id=201    #slave‘id
+log_bin=wnhz-slave-01-logbin    #logbin name
+relay_log=wnhz-slave-01-relay
+read-only=1
+```
+```
+server-id=202    #slave‘id
+log_bin=wnhz-slave-02-logbin    #logbin name
+relay_log=wnhz-slave-02-relay
+read-only=1
+```
 
 #### master创建用户slave进行主从关联
 
