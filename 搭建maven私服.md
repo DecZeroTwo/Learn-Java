@@ -135,6 +135,10 @@ sonatype-work: 工作空间，数据文件。
 
 查看管理员密码
 
+通过以下路径下的文件获取
+
+![image-202310132317534](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310132317534.png)
+
 ![image-20231012210148087](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202310122101155.png)
 
 第一次登录会要求修改管理员密码
