@@ -52,4 +52,7 @@ Handler 是继DispatcherServlet前端控制器的后端控制器，在Dispatcher
 
 **视图解析器ViewResolver**
 进行视图解析，根据逻辑视图名解析成真正的视图（view）
+
+**视图解析器ViewResolver**
+进行视图解析，根据逻辑视图名解析成真正的视图（view）
 ViewResolver负责将处理结果生成View视图，ViewResolver首先根据逻辑视图名解析成物理视图名即具体的页面地址，再生成View视图对象，最后对View进行渲染将处理结果通过页面展示给用户。
