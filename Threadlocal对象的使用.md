@@ -44,8 +44,6 @@ ThreadLocal<T>其实是与线程绑定的一个变量。ThreadLocal和Synchonize
 ## ThreadLocal的简单使用
 
 ```java
-package com.wnhz.bms.cache;
-
 public class ThreadLocalDemo {
 
     private static ThreadLocal<String> threadLocal = new ThreadLocal<String>();
@@ -57,10 +55,10 @@ public class ThreadLocalDemo {
 
         new Thread(new Runnable() {
             public void run() {
-                ThreadLocalDemo.threadLocal.set("A");
                 //打印线程本地变量
                 System.out.println("当前线程本地变量:" + threadLocal.get());
-
+                threadLocal.set("A");
+                System.out.println("当前线程本地变量:" + threadLocal.get());
             }
         },"A").start();
 
@@ -70,10 +68,8 @@ public class ThreadLocalDemo {
 
         new Thread(new Runnable() {
             public void run() {
-                if (threadLocal.get() == null){
-                    threadLocal.set("B");
-                }
-                //打印线程本地变量
+                System.out.println("当前线程本地变量:" + threadLocal.get());
+                threadLocal.set("B");
                 System.out.println("当前线程本地变量:" + threadLocal.get());
             }
         },"B").start();
@@ -83,10 +79,11 @@ public class ThreadLocalDemo {
 
 
 A线程
+当前线程本地变量:null
 当前线程本地变量:A
 B线程
+当前线程本地变量:null
 当前线程本地变量:B
-
 ```
 
 
