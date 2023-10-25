@@ -41,6 +41,74 @@ ThreadLocal<T>其实是与线程绑定的一个变量。ThreadLocal和Synchonize
 
 
 
+## ThreadLocal的原理
+
+我们来看ThreadLocal的源码
+```java
+public T get() {
+	//获取当前线程
+    Thread t = Thread.currentThread();
+    //获取当前线程的ThreadLocalMap
+    ThreadLocalMap map = getMap(t);
+    if (map != null) {
+        ThreadLocalMap.Entry e = map.getEntry(this);
+        if (e != null) {
+            @SuppressWarnings("unchecked")
+            T result = (T)e.value;
+            return result;
+        }
+    }
+    return setInitialValue();
+}
+
+
+ThreadLocalMap getMap(Thread t) {
+	//获取线程的threadLocals
+    return t.threadLocals;
+}
+```
+
+```java
+public void set(T value) {
+    Thread t = Thread.currentThread();
+    ThreadLocalMap map = getMap(t);
+    if (map != null) {
+        map.set(this, value);
+    } else {
+        createMap(t, value);
+    }
+}
+```
+
+
+```java
+static class ThreadLocalMap {
+
+        /**
+         * The entries in this hash map extend WeakReference, using
+         * its main ref field as the key (which is always a
+         * ThreadLocal object).  Note that null keys (i.e. entry.get()
+         * == null) mean that the key is no longer referenced, so the
+         * entry can be expunged from table.  Such entries are referred to
+         * as "stale entries" in the code that follows.
+         */
+        static class Entry extends WeakReference<ThreadLocal<?>> {
+            /** The value associated with this ThreadLocal. */
+            Object value;
+
+            Entry(ThreadLocal<?> k, Object v) {
+                super(k);
+                value = v;
+            }
+        }
+```
+
+从源码中我们可以知道ThreadLocal的get()方法是先拿到当前线程，然后在拿到当前线程的threadLocals，threadLocals是什么呢？它是ThreadLocal的内部静态类ThreadLocalMap而它的构成主要是用Entry来保存数据 ，而且还是继承的弱引用。在Entry内部使用ThreadLocal作为key，使用我们设置的value作为value。
+也就是说ThreadLocal本身并不存储任何数据，它只是作为线程中的threadLocals(ThreadLocalMap)的key，每个线程通过它来去自己的成员变量threadLocals中来获取value，于就是实现了不同的线程在ThreadLocal中get()和set()是完全隔离的。
+执行流程：
+get()——>获取当前线程——>拿到当前线程的threalLocalMap——>如果threalLocalMap不为null并且数据不为空，获取threalLocalMap中存储的值，如果是数据为null，则初始化，初始化的结果，TheralLocalMap中存放key值为threadLocal，值为null
+set()——>获取当前线程——>拿到当前线程的threalLocalMap——>如果threalLocalMap不为null，则直接更新要保存的变量值key为ThreadLocal，value为参数，否则创建threadLocalMap，并赋值
+
 ## ThreadLocal的简单使用
 
 ```java
@@ -99,48 +167,8 @@ B线程
 1.使用 `ThreadLocal` 类的 set() 方法设置值：
 
 ```java
- public void set(T value) {
-        //1、获取当前线程
-        Thread t = Thread.currentThread();
-        //2、获取线程中的属性 threadLocalMap ,如果threadLocalMap 不为空，
-        //则直接更新要保存的变量值，否则创建threadLocalMap，并赋值
-        ThreadLocalMap map = getMap(t);
-        if (map != null)
-            map.set(this, value);
-        else
-            // 初始化thradLocalMap 并赋值
-            createMap(t, value);
-    }
+threadLocal.set(value);
 ```
-
-从上面的代码可以看出，ThreadLocal set赋值的时候首先会获取当前线程thread,并获取thread线程中的ThreadLocalMap属性。如果map属性不为空，则直接更新value值，如果map为空，则实例化threadLocalMap,并将value值初始化。其中 `T` 是存储在 `ThreadLocal` 中的值的类型。
-
-那么ThreadLocalMap又是什么呢
-
-```java
-static class ThreadLocalMap {
-
-        /**
-         * The entries in this hash map extend WeakReference, using
-         * its main ref field as the key (which is always a
-         * ThreadLocal object).  Note that null keys (i.e. entry.get()
-         * == null) mean that the key is no longer referenced, so the
-         * entry can be expunged from table.  Such entries are referred to
-         * as "stale entries" in the code that follows.
-         */
-        static class Entry extends WeakReference<ThreadLocal<?>> {
-            /** The value associated with this ThreadLocal. */
-            Object value;
-
-            Entry(ThreadLocal<?> k, Object v) {
-                super(k);
-                value = v;
-            }
-        }
-```
-
-可看出ThreadLocalMap是ThreadLocal的内部静态类。在Entry内部使用ThreadLocal作为key，使用我们设置的value作为value。
-
 
 
 2.使用 ThreadLocal 类的 get() 方法获取值：
@@ -168,8 +196,6 @@ threadLocal.remove();
 ```java
 threadLocal.remove();
 ```
-
-
 
 ## 参考
 
