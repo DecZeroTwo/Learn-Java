@@ -227,7 +227,7 @@
 
 在运行期间，Mark Word中存储的数据会随着锁标志位的变化而变化，在32位虚拟机中，不同状态下的组成如下：
 
-
+![img](https://raw.githubusercontent.com/DecZeroTwo/blogimage/main/images/202311302152016.png)
 
 其中线程ID表示持有偏向锁线程的ID，Epoch表示偏向锁的时间戳，偏向锁和轻量级锁是在jdk1.6中引入的。
 
